@@ -1,5 +1,7 @@
 ## Project structure
-```bli/
+```
+
+bli/
 ├── __init__.py
 ├── __main__.py
 ├── cli.py
