@@ -1,0 +1,20 @@
+name: mock_dataset
+runtime: yaml
+description: mock_dataset
+
+variables:
+  location: northamerica-northeast1
+  process_nm: mock_dataset_bli
+
+resources:
+  default_dataset:
+    type: gcp:bigquery:Dataset
+    properties:
+      datasetId: ${process_nm}
+      friendlyName: ${process_nm}
+      description: Mock dataset for testing blv cli
+      location: northamerica-northeast1
+      deleteContentsOnDestroy: true
+
+outputs:
+  message: "Stack initialized successfully!"

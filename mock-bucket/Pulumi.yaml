@@ -1,0 +1,20 @@
+name: mock_bucket
+runtime: yaml
+description: A Pulumi project created with BLI
+
+variables:
+  location: northamerica-northeast1
+  bucket_nm: mock-pulumi
+
+resources:
+  bucket_mock:
+    type: gcp:storage:Bucket
+    properties:
+      location: northamerica-northeast1
+      name: ${project}-${bucket_nm}
+      uniformBucketLevelAccess: true
+      forceDestroy: true
+
+
+outputs:
+  bucket_nm: ${bucket_mock.name}
