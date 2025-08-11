@@ -1,5 +1,5 @@
 ## Project structure
-bli/
+```bli/
 ├── __init__.py
 ├── __main__.py
 ├── cli.py
@@ -18,6 +18,8 @@ bli/
 ├── setup.py
 ├── pyproject.toml
 └── README.md
+
+```
 
 # BLI CLI
 
